@@ -223,6 +223,7 @@ section {
   text-transform: uppercase;
   font-size: 7.25em;
   position: absolute;
+  z-index: 999;
 }
 .m_tit span:first-of-type {
   top: 1em;
@@ -243,8 +244,21 @@ section {
   right: 10.5%;
 }
 .m_FB {
-  font-family: "pretendard Std Variable", Arial, serif;
+  font-family: "Pretendard Std Variable", Arial, sans-serif;
   font-weight: 600;
+}
+
+/* 다크모드 메인 */
+.dark .mLine,
+.dark .t_ml:after,
+.dark .b_ml::before {
+  background: var(--sec_s);
+}
+.dark .m_tit span {
+  color: var(--sec_s);
+}
+.dark .m_subT {
+  color: var(--FONT_W);
 }
 
 .m_fh1 {

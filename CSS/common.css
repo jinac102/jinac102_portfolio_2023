@@ -66,8 +66,18 @@ body {
 #mouseCursor.mHover {
   clip-path: polygon(48% 0, 0% 100%, 100% 100%);
   transform: rotate(-34.93deg);
+  background: var(--sec_s);
+}
+.dark #mouseCursor {
+  background: var(--SEC_LG);
+  box-shadow: 0px 0px 15px 3px var(--SEC_LG);
+}
+.dark #mouseCursor.mHover {
+  clip-path: polygon(48% 0, 0% 100%, 100% 100%);
+  transform: rotate(-34.93deg);
   background: var(--BG_p);
 }
+
 /* 다크모드&라이트모드 */
 .dark {
   background-color: var(--BG_N);
@@ -102,13 +112,13 @@ a {
   position: absolute;
   width: 356px;
   height: 337px;
-  left: 48px;
-  top: 251px;
+  left: 75px;
+  top: 110px;
 }
-.m_won path {
-  fill: linear-gradient(
-    180deg,
-    rgba(255, 30, 30, 0.3) -30.49%,
-    rgba(255, 167, 34, 0.3) 69.51%
-  );
+.blobs2 {
+  position: absolute;
+  width: 210px;
+  height: 160px;
+  left: 82%;
+  top: 25.2em;
 }
