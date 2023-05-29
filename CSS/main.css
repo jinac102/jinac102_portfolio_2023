@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Foldit&family=Hi+Melody&family=Song+Myung&display=swap");
+@font-face {
+  font-family: "heir_of_lightregular";
+  src: url("../font/heiroflightregular-webfont.woff2") format("woff2"),
+    url("../font/heiroflightregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/**/
+
+html {
+  cursor: none;
+}
+body {
+  font-family: "Pretendard Std Variable", "Hi Melody", Arial, sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+/* header */
+header.row {
+  line-height: 5.06em;
+  margin-top: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  padding: 0 2.5em;
+}
+.logo_img {
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 2em;
+}
+.navi > li {
+  width: 25%;
+  text-align: center;
+}
+.navi > li a {
+  color: var(--BG_N);
+  text-transform: uppercase;
+}
+
+.navi > li a::after {
+  content: "";
+  display: block;
+  position: relative;
+  border-bottom: 2px solid var(--BG_N);
+  width: 0em;
+  height: 2px;
+  top: -1em;
+  left: 2.9em;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.82, -0.01, 0.45, 1.32);
+}
+.navi > li:hover a:after {
+  width: 5em;
+  transform: scaleX(1);
+}
+.navi > li:hover a {
+  font-weight: 600;
+}
+
+.h_icon {
+  line-height: 5.25em;
+  display: block;
+  height: 5.25em;
+}
+.h_icon > ul > li.sprite {
+  margin-top: 2em;
+}
+.D_mode {
+  transition: transform 0.3s;
+}
+.D_mode:hover {
+  transform: scale(1.2);
+}
+.lang {
+  background-position: -3.85em 0.1em;
+  position: relative;
+}
+
+.sub_nav {
+  width: 3.563em;
+  height: 0em;
+  background: var(--BG_N);
+  position: absolute;
+  top: 2.8em;
+  left: -1.05em;
+  border-radius: 0.313em;
+  transition: 0.5s;
+  visibility: hidden;
+  z-index: 999999999;
+}
+.lang:hover {
+  transform: rotateX("360deg");
+}
+.sub_nav.tog_open {
+  height: 6.75em;
+  visibility: visible;
+}
+
+.sub_nav.tog_open::before {
+  border: 1.25em solid;
+  border-color: transparent transparent var(--BG_N) transparent;
+  visibility: visible;
+}
+
+.sub_nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0em solid;
+  border-color: transparent transparent var(--BG_N) transparent;
+  top: -2em;
+  left: 0.5em;
+  visibility: hidden;
+  z-index: 999999999;
+}
+.sub_nav > li {
+  height: 30%;
+  text-align: center;
+  line-height: 30%;
+}
+
+.sub_nav > li a {
+  display: inline-block;
+  position: relative;
+  color: var(--FONT_W);
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  line-height: 2.5em;
+  font-size: 1em;
+  transition: transform 0.3s;
+}
+.sub_nav > li:hover a {
+  transform: scale(1.2);
+}
+
+/* 다크모드 */
+.dark header > svg {
+  fill: var(--SEC_LG);
+}
+.dark .navi > li > a {
+  color: var(--SEC_LG);
+}
+.dark .navi > li a::after {
+  border-bottom: 2px solid var(--SEC_LG);
+}
+.dark .lang .sub_nav {
+  background: var(--SEC_LG);
+}
+.dark .sub_nav.tog_open::before {
+  border-color: transparent transparent var(--SEC_LG) transparent;
+}
+.dark .lang .sub_nav > li a {
+  color: var(--BG_N);
+}
+
+.dark .D_mode {
+  background-position: -1.75em 0.1em;
+}
+.dark .lang {
+  background-position: -5.75em 0em;
+}
+
+/* main */
+section {
+  width: 100%;
+  height: 100vw;
+  position: relative;
+}
+
+/* secion1 */
+#top {
+  position: relative;
+}
+.mLine {
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background: var(--Font_B);
+  z-index: 99999;
+  top: 78px;
+  left: 0;
+}
+.t_ml:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: var(--Font_B);
+  top: -15px;
+  right: -15px;
+  position: absolute;
+  border-radius: 50%;
+}
+.b_ml {
+  width: 70%;
+  top: 645px;
+  left: 30%;
+}
+.b_ml::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: var(--Font_B);
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  border-radius: 50%;
+}
+.m_tit {
+  display: inline-block;
+  text-align: center;
+}
+.m_tit span {
+  font-family: "heir_of_lightregular", Arial, serif;
+  color: var(--Font_B);
+  text-transform: uppercase;
+  font-size: 7.25em;
+  position: absolute;
+}
+.m_tit span:first-of-type {
+  top: 1em;
+  right: 4.5em;
+}
+.m_tit span:last-of-type {
+  top: 2.3em;
+  right: 1.5em;
+}
+.m_subT {
+  font-family: "Song Myung", Arial, serif;
+  font-size: 1.2em;
+  line-height: 27px;
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  top: 21.5%;
+  right: 10.5%;
+}
+.m_FB {
+  font-family: "pretendard Std Variable", Arial, serif;
+  font-weight: 600;
+}
+
+.m_fh1 {
+  position: absolute;
+  left: 45px;
+  top: 61px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1000000000000;
+}
+.h1ribon {
+  box-sizing: border-box;
+  position: absolute;
+  width: 342px;
+  height: 82px;
+  left: -48px;
+  top: -25px;
+  background: rgba(124, 133, 148, 0.25);
+  border: 1px solid rgba(217, 217, 217, 0.25);
+}
+.h1ribon::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-width: 57px;
+  border-top: 57px solid;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  line-height: 3.125em;
+}
+/* 다크모드 */
+.dark .copy {
+  color: var(--FONT_W);
+}
