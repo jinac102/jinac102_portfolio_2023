@@ -138,6 +138,41 @@ header.row {
 .sub_nav > li:hover a {
   transform: scale(1.2);
 }
+.arrow {
+  width: 2.3em;
+  height: 3.5em;
+  background-position: -8.8em 0em;
+  position: absolute;
+  bottom: 24.5%;
+  left: 12.5%;
+  animation: arrowB 2s cubic-bezier(0.22, 0.04, 0.81, 0.98) infinite reverse;
+}
+.arrow > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* .arrow > span {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 3px solid var(--SEC_LG);
+  position: absolute;
+  top: calc(-50% + 0.9em);
+  left: calc(-50% - 0.5em);
+} */
+
+@keyframes arrowB {
+  0% {
+    height: 3.5em;
+  }
+  50% {
+    height: 1.75em;
+  }
+  100% {
+    height: 0em;
+  }
+}
 
 /* 다크모드 */
 .dark header > svg {
@@ -165,6 +200,9 @@ header.row {
 .dark .lang {
   background-position: -5.75em 0em;
 }
+.dark .arrow {
+  background-position: -11.1em 0em;
+}
 
 /* main */
 section {
@@ -176,6 +214,7 @@ section {
 /* secion1 */
 #top {
   position: relative;
+  height: 1024px;
 }
 .mLine {
   position: absolute;
@@ -185,6 +224,23 @@ section {
   z-index: 99999;
   top: 78px;
   left: 0;
+}
+.t_ml {
+  animation: mtline 4s cubic-bezier(0.12, 0.11, 0.92, 0.95) normal;
+}
+@keyframes mtline {
+  0% {
+    width: 0;
+  }
+  45% {
+    width: 45%;
+  }
+  95% {
+    width: 90%;
+  }
+  100% {
+    width: 90%;
+  }
 }
 .t_ml:after {
   content: "";
@@ -196,11 +252,35 @@ section {
   right: -15px;
   position: absolute;
   border-radius: 50%;
+  animation: mwon 4s cubic-bezier(0.26, 0.26, 0.73, 0.77) reverse;
+}
+@keyframes mwon {
+  0% {
+    width: 0px;
+  }
+  80% {
+    width: 0px;
+  }
+  99% {
+    width: 15px;
+  }
+  100% {
+    width: 30px;
+  }
 }
 .b_ml {
   width: 70%;
   top: 645px;
   left: 30%;
+  animation: mbline 4s cubic-bezier(0.12, 0.11, 0.92, 0.95) normal;
+}
+@keyframes mbline {
+  0% {
+    width: 70%;
+  }
+  100% {
+    width: 0%;
+  }
 }
 .b_ml::before {
   content: "";
@@ -212,6 +292,7 @@ section {
   left: -15px;
   position: absolute;
   border-radius: 50%;
+  animation: mwon 4s cubic-bezier(0.26, 0.26, 0.73, 0.77) reverse;
 }
 .m_tit {
   display: inline-block;
@@ -227,7 +308,8 @@ section {
 }
 .m_tit span:first-of-type {
   top: 1em;
-  right: 4.5em;
+  right: 0.5em;
+  width: 100%;
 }
 .m_tit span:last-of-type {
   top: 2.3em;
@@ -240,7 +322,7 @@ section {
   text-align: right;
   text-transform: uppercase;
   position: absolute;
-  top: 21.5%;
+  bottom: 45%;
   right: 10.5%;
 }
 .m_FB {
@@ -269,23 +351,16 @@ section {
   text-align: center;
   z-index: 1000000000000;
 }
-.h1ribon {
-  box-sizing: border-box;
-  position: absolute;
-  width: 342px;
-  height: 82px;
-  left: -48px;
-  top: -25px;
-  background: rgba(124, 133, 148, 0.25);
-  border: 1px solid rgba(217, 217, 217, 0.25);
-}
-.h1ribon::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 0px;
-  border-width: 57px;
-  border-top: 57px solid;
+
+/* tit h1 */
+.m_fh1 {
+  font-family: "Song Myung", serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 81px;
+  text-transform: uppercase;
+  color: #1a4170;
 }
 
 /* footer */
