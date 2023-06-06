@@ -67,3 +67,56 @@ lang.addEventListener("click", function () {
     this.classList.remove("tog_open");
   });
 });
+
+/* section 2 
+const sec2 = document.querySelector(".content");
+const content = gsap.utils.toArray(".content ul > li");
+// const texts = gsap.utils.toArray(".anim");
+const mask = document.querySelector(".mask");
+
+let scrollTween = gsap.to(content, {
+  xPercent: -100 * (content.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".content",
+    pin: true,
+    scrub: 1,
+    end: "+=3000",
+    //snap: 1 / (sections.length - 1),
+    markers: true,
+  },
+});
+
+gsap.to(mask, {
+  width: "105%",
+  scrollTrigger: {
+    trigger: ".content",
+    start: "top left",
+    scrub: 1,
+  },
+});
+
+/*
+// whizz around the sections
+sections.forEach((section) => {
+  // grab the scoped text
+  let text = section.querySelectorAll(".anim");
+
+  // bump out if there's no items to animate
+  if (text.length === 0) return;
+
+  // do a little stagger
+  gsap.from(text, {
+    y: -130,
+    opacity: 0,
+    duration: 2,
+    ease: "elastic",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: section,
+      containerAnimation: scrollTween,
+      start: "left center",
+      markers: true,
+    },
+  });
+});*/

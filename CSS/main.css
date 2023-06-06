@@ -141,11 +141,11 @@ header.row {
 .arrow {
   width: 2.3em;
   height: 3.5em;
-  background-position: -8.8em 0em;
+  background-position: -8.8em -0.5em;
   position: absolute;
   bottom: 24.5%;
   left: 12.5%;
-  animation: arrowB 2s cubic-bezier(0.22, 0.04, 0.81, 0.98) infinite reverse;
+  animation: arrowB 2s cubic-bezier(0.22, 0.04, 0.81, 0.98) infinite normal;
 }
 .arrow > a {
   display: inline-block;
@@ -343,15 +343,6 @@ section {
   color: var(--FONT_W);
 }
 
-.m_fh1 {
-  position: absolute;
-  left: 45px;
-  top: 61px;
-  text-transform: uppercase;
-  text-align: center;
-  z-index: 1000000000000;
-}
-
 /* tit h1 */
 .m_fh1 {
   font-family: "Song Myung", serif;
@@ -361,6 +352,142 @@ section {
   line-height: 81px;
   text-transform: uppercase;
   color: #1a4170;
+  position: absolute;
+  left: 45px;
+  top: 61px;
+}
+.ms_R {
+  left: 80%;
+}
+
+/* work main */
+#work {
+  height: 1024px;
+}
+.content {
+  padding-top: 14em;
+  overflow: hidden;
+}
+.list {
+  width: 100vw;
+  height: 100%;
+  gap: 6em;
+}
+.list li {
+  width: 33%;
+  position: relative;
+  display: block;
+}
+.list li a {
+  display: inline-block;
+  width: 100%;
+}
+.workBg_blob {
+  display: block;
+  width: 32em;
+  margin-left: 1.5em;
+}
+
+.main_txt {
+  color: var(--FONT_W);
+  position: absolute;
+  top: 22%;
+  left: 30%;
+  text-align: center;
+  line-height: 27px;
+  font-family: "Pretendard Std Variable";
+}
+
+.scrollX {
+  margin-top: 7em;
+}
+
+/* section3*/
+.prof_L {
+  display: inline-block;
+  width: 50%;
+  background: #e8e9e9;
+}
+
+.prof_R {
+  /* position: fixed; */
+  display: inline-block;
+  height: 1024px;
+  width: 50%;
+  top: 0;
+}
+.pro_R_blobs {
+  position: relative;
+}
+.fix_photo {
+  background-image: url(../img/photo/001.jpg);
+}
+.prof_photo {
+  position: absolute;
+  left: 20%;
+  top: 13em;
+  width: 80%;
+}
+.photo_blob_shape {
+  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00OC4zLC00MC43QzYxLjksLTIxLjQsNzEuOSwtMS40LDY3LjksMTUuM0M2NCwzMiw0Ni4xLDQ1LjMsMjUuOCw1Ni4yQzUuNCw2NywtMTcuNCw3NS4zLC0zNiw2OC43Qy01NC43LDYyLjEsLTY5LDQwLjYsLTc0LjEsMTcuM0MtNzkuMSwtNi4xLC03NC44LC0zMS4yLC02MC45LC01MC41Qy00NywtNjkuOSwtMjMuNSwtODMuNiwtMy4xLC04MS4xQzE3LjMsLTc4LjcsMzQuNywtNjAuMSw0OC4zLC00MC43WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
+  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00OC4zLC00MC43QzYxLjksLTIxLjQsNzEuOSwtMS40LDY3LjksMTUuM0M2NCwzMiw0Ni4xLDQ1LjMsMjUuOCw1Ni4yQzUuNCw2NywtMTcuNCw3NS4zLC0zNiw2OC43Qy01NC43LDYyLjEsLTY5LDQwLjYsLTc0LjEsMTcuM0MtNzkuMSwtNi4xLC03NC44LC0zMS4yLC02MC45LC01MC41Qy00NywtNjkuOSwtMjMuNSwtODMuNiwtMy4xLC04MS4xQzE3LjMsLTc4LjcsMzQuNywtNjAuMSw0OC4zLC00MC43WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
+}
+.photo_blob_shape > img {
+  display: block;
+  width: 80%;
+  object-fit: contain;
+  object-position: 55px 52px;
+}
+
+.profr_blob {
+  position: absolute;
+  right: 15%;
+  top: 13em;
+}
+
+/*section4*/
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form_wrap {
+  width: 507px;
+  height: 528px;
+  left: 125px;
+  top: 190px;
+
+  background: radial-gradient(
+    117.25% 306.03% at -8.22% -8.98%,
+    rgba(193, 193, 193, 0.2) 0%,
+    rgba(193, 193, 193, 0) 100%
+  );
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(5px);
+}
+.form_lab {
+  font-family: "Song Myung";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+.form_inp {
+  width: 396px;
+  height: 52px;
+  left: 187px;
+  top: 366px;
+
+  background: radial-gradient(
+    126.92% 4686.39% at -6.67% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
 }
 
 /* footer */
