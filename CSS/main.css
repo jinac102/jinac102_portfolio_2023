@@ -518,3 +518,20 @@ footer {
 .dark .copy {
   color: var(--FONT_W);
 }
+
+/* media */
+
+@media screen and (min-width: 1200) {
+  .navi {
+    display: none;
+    opacity: 0;
+  }
+  .tnm_icon {
+    display: block;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid var(--Font_B);
+    border-bottom: 3px solid var(--Font_B);
+  }
+}

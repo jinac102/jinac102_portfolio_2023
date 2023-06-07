@@ -120,3 +120,19 @@ sections.forEach((section) => {
     },
   });
 });*/
+
+/* section 3 */
+const prof = document.querySelector("#prof");
+const profr = document.querySelector(".prof_R");
+var profH = prof.offsetHeight;
+const wy = window.pageYOffset;
+
+window.addEventListener("scroll", function () {
+  if (profH || wy) {
+    profr.css({
+      display: "fixed",
+    });
+  }
+  console.log(profH);
+  console.log(ws);
+});
