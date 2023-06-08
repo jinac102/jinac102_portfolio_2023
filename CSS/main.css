@@ -521,7 +521,7 @@ footer {
 
 /* media */
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .navi {
     display: none;
     opacity: 0;
