@@ -35,7 +35,23 @@ body {
 .f_L {
   font-weight: 200;
 }
-
+@media screen and (max-width: 1200px) {
+  .f_h1 {
+    font-size: 1.75em;
+  }
+  .f_h2 {
+    font-size: 1.5em;
+  }
+  .f_h3 {
+    font-size: 1.25em;
+  }
+  .f_h4 {
+    font-size: 1em;
+  }
+  .f_h5 {
+    font-size: 0.75em;
+  }
+}
 /* color */
 :root {
   --BG_N: #000b18;

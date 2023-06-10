@@ -561,7 +561,7 @@ footer {
 
 /* media */
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .navi {
     display: none;
     opacity: 0;
@@ -573,5 +573,15 @@ footer {
     height: 30px;
     border-top: 3px solid var(--Font_B);
     border-bottom: 3px solid var(--Font_B);
+    top: calc(50% - 49%);
+    position: absolute;
+    right: calc(50% - 45%);
+  }
+  .dark .tnm_icon {
+    border-top: var(--FONT_W);
+    border-bottom: var(--FONT_W);
+  }
+  .m_tit span {
+    font-size: 5.25ems;
   }
 }
