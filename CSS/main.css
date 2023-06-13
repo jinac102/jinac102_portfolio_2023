@@ -185,11 +185,10 @@ header.row {
   left: 12.5%;
   animation: arrowB 2s cubic-bezier(0.22, 0.04, 0.81, 0.98) infinite normal;
 }
-.arrow > a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+.scroll_icon {
+  position: relative;
 }
+
 /* .arrow > span {
   width: 85px;
   height: 85px;
@@ -243,16 +242,20 @@ header.row {
 }
 
 /* main */
+main {
+  overflow: hidden;
+}
+
 section {
   width: 100%;
-  height: 100vw;
+  height: 100%;
   position: relative;
 }
 
 /* secion1 */
 #top {
   position: relative;
-  height: 1024px;
+  margin-bottom: 10em;
 }
 .mLine {
   position: absolute;
@@ -310,16 +313,16 @@ section {
 }
 .b_ml {
   width: 70%;
-  top: 645px;
+  top: calc(50% + 40%);
   left: 30%;
   animation: mbline 4s cubic-bezier(0.12, 0.11, 0.92, 0.95) normal;
 }
 @keyframes mbline {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
 .b_ml::before {
@@ -337,7 +340,7 @@ section {
 .m_tit {
   display: block;
   text-align: center;
-  padding: 135px 0;
+  padding: 165px 0;
   position: relative;
 }
 .m_tit span {
@@ -347,28 +350,42 @@ section {
   font-size: 7.25em;
   position: relative;
   z-index: 999;
+  display: block;
 }
 .m_tit span:first-of-type {
   left: calc(50% - 60%);
 }
 .m_tit span:nth-of-type(2) {
   margin: 54px 0;
+  left: calc(50% - 38%);
 }
 .m_tit span:last-of-type {
+  left: calc(50% - 55%);
 }
-.m_subT {
-  font-family: "Song Myung", Arial, serif;
+.top_sub_tit {
+  position: absolute;
+  left: calc(50% + 25%);
+  top: 28.2em;
+}
+.top_sub_tit .m_subT {
+  font-family: "Pretendard Std Variable", Arial, sans-serif;
   font-size: 1.2em;
   line-height: 27px;
   text-align: right;
   text-transform: uppercase;
   position: absolute;
-  bottom: calc(50% - 32%);
-  right: calc(52% - 33%);
+  display: block;
+  top: 2em;
+  left: -5em;
+  width: 170px;
+  font-weight: 400;
 }
-.m_FB {
+.top_sub_tit .m_subT > .m_FB {
   font-family: "Pretendard Std Variable", Arial, sans-serif;
+  display: inline-block;
   font-weight: 600;
+  font-size: 1.2em;
+  margin-right: -7px;
 }
 
 /* 다크모드 메인 */
@@ -380,11 +397,12 @@ section {
 .dark .m_tit span {
   color: var(--sec_s);
 }
-.dark .m_subT {
+.dark .m_subT,
+.dark .scroll_p {
   color: var(--FONT_W);
 }
 
-/* tit h1 */
+/* main공통 tit h1 */
 .m_fh1 {
   font-family: "Song Myung", serif;
   font-size: 1.2em;
@@ -399,14 +417,15 @@ section {
 }
 .ms_R {
   left: 80%;
+  position: relative;
 }
 
-/* work main */
+/* section2 */
 #work {
   height: 1024px;
 }
 .content {
-  padding-top: 14em;
+  margin: 14em 0;
   overflow: hidden;
 }
 .list {
@@ -428,8 +447,8 @@ section {
   width: 32em;
   margin-left: 1.5em;
 }
-.list li:hover .workBg_blob {
-  transform: scale(1.2);
+.list li:hover .workBg_blob > svg {
+  transform: scale(1.02);
 }
 
 .main_txt {
@@ -440,10 +459,11 @@ section {
   text-align: center;
   line-height: 27px;
   font-family: "Pretendard Std Variable";
+  z-index: 999999;
 }
 
 .scrollX {
-  margin-top: 7em;
+  margin-top: 12em;
 }
 
 /* section3*/
@@ -495,8 +515,6 @@ section {
 }
 #contact .content {
   position: relative;
-  display: flex;
-  overflow: hidden;
 }
 #contact .m_fh1 {
   position: relative;
@@ -506,85 +524,17 @@ section {
 .contact_kao_R {
   width: 507px;
   height: 528px;
-  left: 125px;
-  top: 190px;
-
+  margin: 0 auto;
+  border: 0.5px solid var(--BG_N);
   background: radial-gradient(
     117.25% 306.03% at -8.22% -8.98%,
     rgba(193, 193, 193, 0.2) 0%,
     rgba(193, 193, 193, 0) 100%
   );
+
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
   backdrop-filter: blur(5px);
-}
-/*
-.form_lab {
-  font-family: "Song Myung";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height
-
-  text-transform: uppercase;
-}
-.contact_kao_R {
-  width: 396px;
-  height: 52px;
-  left: 187px;
-  top: 366px;
-
-  background: radial-gradient(
-    126.92% 4686.39% at -6.67% 0%,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(5px);
-  /* Note: backdrop-filter has minimal browser support 
-}*/
-.contact_kao_R a {
-  position: absolute;
-  width: 202px;
-  height: 52px;
-  left: 284px;
-  top: 625px;
-
-  background: radial-gradient(
-      184.94% 7380.58% at -75.25% -34.62%,
-      rgba(193, 193, 193, 0.4) 0%,
-      rgba(193, 193, 193, 0) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(5px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 25px;
-}
-.contact_kao_R {
-  display: block;
-  width: 50%;
-}
-.contact_kao_L {
-  display: block;
-  width: 50%;
-}
-.contact_kao_L .t_ml {
-  transform: rotate(360deg);
-  top: calc(50% - 10%);
-  left: 0;
-}
-.contact_kao_L .t_ml,
-.contact_kao_L .t_ml:after,
-.contact_kao_L .b_ml,
-.contact_kao_L .b_ml::before {
-  animation: none;
-}
-.contact_kao_L .b_ml {
-  transform: rotate(0deg);
-  left: calc(50% + 5%);
-  top: calc(50% + 40%);
+  border-radius: 335px 335px 5px 5px;
 }
 
 /* footer */

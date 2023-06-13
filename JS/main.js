@@ -122,7 +122,7 @@ sections.forEach((section) => {
 });*/
 
 /* section 3 */
-const prof = document.querySelector("#prof");
+/*const prof = document.querySelector("#prof");
 const profr = document.querySelector(".prof_R");
 const profH = prof.offsetHeight();
 const wy = window.pageYOffset;
@@ -135,4 +135,4 @@ window.addEventListener("scroll", function () {
   }
   console.log(profH);
   console.log(ws);
-});
+});*/
