@@ -12,7 +12,7 @@ html {
   cursor: none;
 }
 body {
-  font-family: "Pretendard Std Variable", "Hi Melody", Arial, sans-serif;
+  font-family: "Pretendard Std Variable", Arial, sans-serif;
   font-size: 16px;
   position: relative;
 }
@@ -388,6 +388,9 @@ section {
   margin-right: -7px;
 }
 
+main > section {
+  font-family: "Pretendard Std Variable";
+}
 /* 다크모드 메인 */
 .dark .mLine,
 .dark .t_ml:after,
@@ -422,7 +425,7 @@ section {
 
 /* section2 */
 #work {
-  height: 1024px;
+  height: 100%;
 }
 .content {
   margin: 14em 0;
@@ -458,7 +461,7 @@ section {
   left: 30%;
   text-align: center;
   line-height: 27px;
-  font-family: "Pretendard Std Variable";
+
   z-index: 999999;
 }
 
@@ -467,19 +470,31 @@ section {
 }
 
 /* section3*/
-.prof_L {
+.prof_L,
+.prof_R {
   display: inline-block;
   width: 50%;
-  background: #e8e9e9;
 }
-
-.prof_R {
+.prof_L {
+  background: #e8e9e9;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 160px 40px;
+}
+.prof_L > h3 {
+}
+.skill_list {
+}
+.skill_list > li {
+}
+.prof_L .prof_R {
   /* position: fixed; */
   display: inline-block;
-  height: 1024px;
+  height: 100%;
   width: 50%;
   top: 0;
 }
+
 .pro_R_blobs {
   position: relative;
 }
@@ -510,18 +525,34 @@ section {
 }
 
 /*section4*/
+
 #contact {
   height: auto;
 }
 #contact .content {
   position: relative;
+  margin-bottom: 7em;
 }
 #contact .m_fh1 {
   position: relative;
   margin-top: 61px;
   text-align: center;
+  left: 0;
 }
-.contact_kao_R {
+.contact_tit {
+  position: absolute;
+  top: calc(50% - 10%);
+  right: calc(50% - 20%);
+  line-height: 27px;
+  text-align: end;
+}
+.contact_tit span {
+  display: block;
+}
+.content:hover {
+  transform: rotateY(360dge);
+}
+.contact_kao_L {
   width: 507px;
   height: 528px;
   margin: 0 auto;
@@ -531,12 +562,45 @@ section {
     rgba(193, 193, 193, 0.2) 0%,
     rgba(193, 193, 193, 0) 100%
   );
-
-  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(5px);
   border-radius: 335px 335px 5px 5px;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+.contact_kao_L > .content_img {
+  background-image: url(../img/contac_IMG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 358px;
+  height: 358px;
+  border-radius: 335px 335px 5px 5px;
+  position: absolute;
+  top: calc(50% - 34%);
+  left: calc(50% - 35%);
+}
+.contact_kao_L:hover .content_img {
+  transform: scale(1.05);
+  border-right: 6px outset rgba(217, 217, 217, 0.5);
+  border-bottom: 6px outset rgba(217, 217, 217, 0.5);
 }
 
+.contact_kao_L > p {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 157px / 2 + 1px);
+  font-size: 10px;
+  line-height: 27px;
+}
+#contact .blobs {
+  left: calc(50% - 25%);
+  top: calc(50% - 35%);
+  width: 400px;
+}
+#contact .blobs2 {
+  bottom: calc(50% - 70%);
+  right: calc(50% - 25%);
+  width: 300px;
+}
 /* footer */
 footer {
   text-align: center;
@@ -547,7 +611,7 @@ footer {
   color: var(--FONT_W);
 }
 
-/* media */
+/* media query */
 
 @media screen and (max-width: 1200px) {
   .navi {
