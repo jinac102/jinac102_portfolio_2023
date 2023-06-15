@@ -1,36 +1,36 @@
 [
   {
     "main_title": "team_project",
-    "sub_title": "",
-    "date": "",
+    "sub_title": "teapot_LMS(학습지원시스템) Final Project(유저 페이지)",
+    "date": "2023.03.27 ~ 2023.04.14",
     "skill": "",
     "images": ""
   },
   {
     "main_title": "team_project",
-    "sub_title": "",
-    "date": "",
-    "skill": "",
+    "sub_title": "teapot_LMS(학습지원시스템) Final Project(관리자 페이지)",
+    "date": "2023.02.24 ~ 2023.03.16",
+    "skill": "'html5','scss','jquery','php'",
     "images": ""
   },
   {
     "main_title": "team_project",
-    "sub_title": "",
-    "date": "",
-    "skill": "",
+    "sub_title": "LGdisplay_시가총액 대 100 기업내 선정 Renewal Project",
+    "date": "2023.01.13 ~ 2023.02.10",
+    "skill": "'html5','css','jquery',",
     "images": ""
   },
   {
     "main_title": "team_project",
-    "sub_title": "",
-    "date": "",
-    "skill": "",
+    "sub_title": "starbucks_Web Project - static Web App",
+    "date": "2022.11.18 ~ 2022.12.22",
+    "skill": "'html5','css','javascript'",
     "images": ""
   },
   {
     "main_title": "personal_project",
     "sub_title": "JOYTOON",
-    "date": "2021.",
+    "date": "2020.",
     "skill": "'html5','scss','jquery',",
     "images": ""
   }

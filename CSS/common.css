@@ -148,7 +148,7 @@ a {
 }
 .scroll_p {
   position: absolute;
-  left: calc(50% - 39.5%);
+  left: calc(50% - 39%);
   top: 0;
   line-height: 27px;
   text-transform: uppercase;
