@@ -577,7 +577,9 @@ main > section {
   top: calc(50% + 60%);
   left: 0;
 }
-
+.prof_R {
+  display: grid;
+}
 .prof_L .prof_R {
   height: 100%;
   top: 0;
@@ -671,11 +673,15 @@ main > section {
 }
 #contact .content {
   position: relative;
-  margin-bottom: 7em;
+  padding-bottom: 7em;
   perspective: 600px;
+  width: 600px;
+  height: 650px;
+  margin: 10em auto;
 }
-#contact .content:hover .card {
+#contact .content:hover .contact_kao_L {
   transform: rotateY(180deg);
+  box-shadow: none;
 }
 #contact .m_fh1 {
   position: relative;
@@ -689,15 +695,13 @@ main > section {
   right: calc(50% - 20%);
   line-height: 27px;
   text-align: end;
+  z-index: 99999999999999;
 }
 .contact_tit span {
   display: block;
 }
 .contact_kao_L {
-  width: 507px;
-  height: 528px;
-  margin: 0 auto;
-  border: 0.5px solid var(--BG_N);
+  /* border: 0.5px solid var(--BG_N); */
   background: radial-gradient(
     117.25% 306.03% at -8.22% -8.98%,
     rgba(193, 193, 193, 0.2) 0%,
@@ -709,6 +713,12 @@ main > section {
   cursor: pointer;
   transition: 1s;
   transform-style: preserve-3d;
+  display: block;
+  width: 507px;
+  height: 528px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+  top: calc(50% - 35%);
+  left: calc(50% - 35%);
 }
 .side {
   position: absolute;
@@ -716,16 +726,23 @@ main > section {
   top: 0;
   width: 100%;
   height: 100%;
-  border-radius: 6px;
   overflow: hidden;
   transition: 1s;
   backface-visibility: hidden;
+  text-align: center;
 }
-.contact_kao_L.back {
+.side.front {
+  top: calc(50%);
+  width: 100%;
+  height: 100%;
+}
+
+.side.back {
   background-color: var(--FONT_W);
   transform: rotateY(180deg);
+  border-radius: 335px 335px 5px 5px;
 }
-.contact_kao_L > .content_img {
+.side > .content_img {
   background-image: url(../img/contac_IMG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -736,18 +753,29 @@ main > section {
   top: calc(50% - 34%);
   left: calc(50% - 35%);
 }
-.contact_kao_L:hover .content_img {
+/* .contact_kao_L:hover .content_img {
   transform: scale(1.05);
   border-right: 6px outset rgba(217, 217, 217, 0.5);
   border-bottom: 6px outset rgba(217, 217, 217, 0.5);
-}
+} */
 
-.contact_kao_L > p {
+.side > p {
   position: absolute;
   bottom: 0;
   left: calc(50% - 157px / 2 + 1px);
   font-size: 10px;
   line-height: 27px;
+}
+.side.front h2 {
+}
+.side.front h2 span {
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 0 2em 2em;
+  font-weight: 400;
+}
+.smile {
 }
 #contact .blobs {
   left: calc(50% - 25%);
@@ -759,6 +787,7 @@ main > section {
   right: calc(50% - 25%);
   width: 300px;
 }
+
 /* footer */
 footer {
   text-align: center;

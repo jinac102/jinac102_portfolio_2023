@@ -1,0 +1,54 @@
+/* common */
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1.link > a {
+  display: block;
+}
+h1.link > a > svg {
+  height: 50px;
+}
+.back {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: var(--FONT_W);
+}
+.back .arrow {
+  transform: rotate(-90deg);
+  display: block;
+  background-position: -8.8em -0.5em;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+}
+
+/* main */
+.content {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: 1fr 1fr;
+}
+.con_L {
+}
+.con_R {
+  display: block;
+  background: var(--Font_B);
+  grid-column: 2/3;
+  grid-row: -1;
+  height: 100%;
+  width: 100%;
+}
+.main_img {
+  width: 500;
+}
