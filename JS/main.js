@@ -48,7 +48,7 @@ function handleMouseMove(event) {
 var linkTag = document.getElementsByClassName("link");
 var lang = document.getElementsByClassName("lang")[0];
 console.log(lang);
-var subnav = document.getElementsByClassName("sub_nav")[0];
+var langnav = document.getElementsByClassName("lang_nav")[0];
 
 for (var i = 0; i < linkTag.length; i++) {
   linkTag[i].addEventListener("mouseenter", function () {
@@ -61,9 +61,9 @@ for (var i = 0; i < linkTag.length; i++) {
 }
 
 lang.addEventListener("click", function () {
-  subnav.classList.add("tog_open");
+  langnav.classList.add("tog_open");
 
-  subnav.addEventListener("mouseleave", function () {
+  langnav.addEventListener("mouseleave", function () {
     this.classList.remove("tog_open");
   });
 });

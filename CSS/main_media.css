@@ -5,14 +5,20 @@
   }
   .tnm_icon {
     display: block;
-    opacity: 1;
-    width: 30px;
+    visibility: visible;
+
+    /* width: 30px;
     height: 30px;
     border-top: 3px solid var(--Font_B);
     border-bottom: 3px solid var(--Font_B);
     top: calc(50% - 49%);
     position: absolute;
-    right: calc(50% - 45%);
+    right: calc(50% - 45%); */
+  }
+
+  #toggle:checked .subnavi {
+    display: block;
+    visibility: visible;
   }
   .dark .tnm_icon {
     border-top: var(--FONT_W);
@@ -33,5 +39,56 @@
 
   .m_tit span {
     font-size: 3.25em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tnm_icon {
+    top: -50px;
+    left: calc(50% + 20%);
+  }
+  .mLine {
+    height: 2px;
+  }
+  .b_ml {
+    top: calc(50% + 7%);
+  }
+  .t_ml:after,
+  .b_ml::before {
+    top: -6px;
+    width: 1em;
+    height: 1em;
+  }
+
+  .m_tit span {
+    font-size: 2.5em;
+    left: calc(50% - 50%);
+  }
+  .m_tit span:nth-of-type(2) {
+    margin: 27px 0;
+  }
+  .blobs {
+    width: 150px;
+    left: calc(50% - 45%);
+    top: calc(50% - 33%);
+  }
+  .top_sub_tit {
+    left: calc(50% + -4%);
+    bottom: calc(50% - 44%);
+  }
+  .blobs2 {
+    width: 150px;
+  }
+  .m_subT {
+    text-align: center;
+  }
+
+  .scroll_icon {
+    top: 5em;
+    left: calc(50% - 15%);
+  }
+  .scroll_p {
+    left: calc(50% - 45%);
+    bottom: -170px;
   }
 }

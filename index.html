@@ -157,62 +157,53 @@
             <a class="f_h4" href="#contact">contact</a>
           </li>
         </ul>
-        <div class="tnm_icon none">
+        <div class="tnm_icon">
           <input type="checkbox" id="toggle">
           <label class="ham_BTN" for="toggle">
-            <div class="tm_nav">
-              <ul class="navi d-flex justify-content-around" id="tabmob">
-                <li class="link">
-                  <a class="f_h4" href="">home</a>
-                </li>
-                <li class="link">
-                  <a class="f_h4" href="#work">work</a>
-                </li>
-                <li class="link">
-                  <a class="f_h4" href="#prof">profile</a>
-                </li>
-                <li class="link">
-                  <a class="f_h4" href="#contact">contact</a>
-                </li>
-              </ul>
-              <div class="h_icon">
-                <ul class="d-flex justify-content-around">
-                  <li class="sprite D_mode link" onclick="Dmode()">
-                    <span class="none">darkmode</span>
-                  </li>
-                  <li class="sprite lang link">
-                    <span class="none">언어변경</span>
-                    <ul class="sub_nav link">
-                      <li class="link">
-                        <a href="http://jinac102.dothome.co.kr/">kr</a>
-                      </li>
-                      <li class="link">
-                        <a href="">eng</a>
-                      </li>
-                      <li class="link">
-                        <a href="">jp</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </label>
         </div>
-        <ul class="navi none" id="tnm">
-          <li>
-            <a href="#work">home</a>
-          </li>
-          <li>
-            <a href="#work">work</a>
-          </li>
-          <li>
-            <a href="#prof">profile</a>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-        </ul>
+        <div class="subnav">
+          <ul class="navi" id="tnm">
+            <li>
+              <a href="#work">home</a>
+            </li>
+            <li>
+              <a href="#work">work</a>
+            </li>
+            <li>
+              <a href="#prof">profile</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+          </ul>
+          <div class="h_icon">
+            <ul class="d-flex justify-content-around">
+              <li class="sprite D_mode link" onclick="Dmode()">
+                <span class="none">darkmode</span>
+              </li>
+              <li class="sprite lang link">
+                <span class="none">언어변경</span>
+                <ul class="lang_nav link">
+                  <li class="link">
+                    <a href="http://jinac102.dothome.co.kr/">kr</a>
+                  </li>
+                  <li class="link">
+                    <a href="">eng</a>
+                  </li>
+                  <li class="link">
+                    <a href="">jp</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </nav>
       <div class="h_icon col-1">
         <ul class="d-flex justify-content-around">
@@ -221,7 +212,7 @@
           </li>
           <li class="sprite lang link">
             <span class="none">언어변경</span>
-            <ul class="sub_nav link">
+            <ul class="lang_nav link">
               <li class="link">
                 <a href="http://jinac102.dothome.co.kr/">kr</a>
               </li>
@@ -278,14 +269,7 @@
             mousewheel="true"
           >
             <li class="swiper-slide">
-              <div class="workBg_blob">
-                <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#1A4170"
-                    d="M44.9,-55.9C57.3,-43,65.9,-28.1,64.9,-14.3C64,-0.5,53.5,12.1,44.3,23.3C35.1,34.4,27.3,44,14.8,54.5C2.3,65,-14.9,76.5,-27.5,73C-40.2,69.5,-48.3,51.1,-54.7,34.3C-61,17.6,-65.6,2.6,-65.9,-14.4C-66.1,-31.3,-62.1,-50.3,-50.4,-63.3C-38.7,-76.3,-19.4,-83.4,-1.6,-81.6C16.2,-79.7,32.4,-68.8,44.9,-55.9Z"
-                    transform="translate(80 85)"
-                  />
-                </svg>
+              <div class="workBg_img">
               </div>
               <div class="main_txt">
                 <div class="main_pj_tit">
@@ -308,7 +292,7 @@
                 <div class="main_about pro_R_CV">
                   <p
                     class="cv_btn f_h5"
-                    onclick="window.open('./sub/detail.html')"
+                    onclick="window.open('/teamPJ/team03_04/pj04_detail.html')"
                   >
                     상세 보기
                   </p>
@@ -316,14 +300,7 @@
               </div>
             </li>
             <li class="swiper-slide">
-              <div class="workBg_blob">
-                <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#1A4170"
-                    d="M44.9,-55.9C57.3,-43,65.9,-28.1,64.9,-14.3C64,-0.5,53.5,12.1,44.3,23.3C35.1,34.4,27.3,44,14.8,54.5C2.3,65,-14.9,76.5,-27.5,73C-40.2,69.5,-48.3,51.1,-54.7,34.3C-61,17.6,-65.6,2.6,-65.9,-14.4C-66.1,-31.3,-62.1,-50.3,-50.4,-63.3C-38.7,-76.3,-19.4,-83.4,-1.6,-81.6C16.2,-79.7,32.4,-68.8,44.9,-55.9Z"
-                    transform="translate(80 85)"
-                  />
-                </svg>
+              <div class="workBg_img">
               </div>
               <div class="main_txt">
                 <div class="main_pj_tit">
@@ -346,45 +323,7 @@
                 <div class="main_about pro_R_CV">
                   <p
                     class="cv_btn f_h5"
-                    onclick="window.open('./sub/detail.html')"
-                  >
-                    상세 보기
-                  </p>
-                </div>
-              </div>
-            </li>
-            li class="swiper-slide">
-              <div class="workBg_blob">
-                <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#1A4170"
-                    d="M44.9,-55.9C57.3,-43,65.9,-28.1,64.9,-14.3C64,-0.5,53.5,12.1,44.3,23.3C35.1,34.4,27.3,44,14.8,54.5C2.3,65,-14.9,76.5,-27.5,73C-40.2,69.5,-48.3,51.1,-54.7,34.3C-61,17.6,-65.6,2.6,-65.9,-14.4C-66.1,-31.3,-62.1,-50.3,-50.4,-63.3C-38.7,-76.3,-19.4,-83.4,-1.6,-81.6C16.2,-79.7,32.4,-68.8,44.9,-55.9Z"
-                    transform="translate(80 85)"
-                  />
-                </svg>
-              </div>
-              <div class="main_txt">
-                <div class="main_pj_tit">
-                  <h3 class="main_s_txt">팀프로젝트</h3>
-                  <h2 class="txt_main">TEAM PORJECT</h2>
-                </div>
-                <div class="main_pj_sub">
-                  이 프로젝트는 전시회 일정을 한눈에 볼 수 있도록 만든 전시회 소개 사이트를 제작하는 프로젝트입니다.
-                </div>
-                <p class="main_pj_date">작업기간</p>
-                <h3 class="main_date">22년 11월 &#8211; 23년 4월</h3>
-                <p class="main_skill">사용 프로그램</p>
-                <ul class="main_skill_list">
-                  <li>figma</li>
-                  <li>html&#38;css</li>
-                  <li>javascript&#38;jquery</li>
-                  <li>react&#38;bootstrap</li>
-                  <li>php&#38;mysql</li>
-                </ul>
-                <div class="main_about pro_R_CV">
-                  <p
-                    class="cv_btn f_h5"
-                    onclick="window.open('./sub/detail.html')"
+                    onclick="window.open('/teamPJ/team03_04/pj03_detail.html')"
                   >
                     상세 보기
                   </p>
@@ -392,14 +331,38 @@
               </div>
             </li>
             <li class="swiper-slide">
-              <div class="workBg_blob">
-                <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#1A4170"
-                    d="M44.9,-55.9C57.3,-43,65.9,-28.1,64.9,-14.3C64,-0.5,53.5,12.1,44.3,23.3C35.1,34.4,27.3,44,14.8,54.5C2.3,65,-14.9,76.5,-27.5,73C-40.2,69.5,-48.3,51.1,-54.7,34.3C-61,17.6,-65.6,2.6,-65.9,-14.4C-66.1,-31.3,-62.1,-50.3,-50.4,-63.3C-38.7,-76.3,-19.4,-83.4,-1.6,-81.6C16.2,-79.7,32.4,-68.8,44.9,-55.9Z"
-                    transform="translate(80 85)"
-                  />
-                </svg>
+              <div class="workBg_img">
+              </div>
+              <div class="main_txt">
+                <div class="main_pj_tit f_B">
+                  <h3 class="main_s_txt">팀프로젝트</h3>
+                  <h2 class="txt_main">TEAM PORJECT</h2>
+                </div>
+                <div class="main_pj_sub">
+                  이 프로젝트는 전시회 일정을 한눈에 볼 수 있도록 만든 전시회 소개 사이트를 제작하는 프로젝트입니다.
+                </div>
+                <p class="main_pj_date">작업기간</p>
+                <h3 class="main_date">22년 11월 &#8211; 23년 4월</h3>
+                <p class="main_skill">사용 프로그램</p>
+                <ul class="main_skill_list">
+                  <li>figma</li>
+                  <li>html&#38;css</li>
+                  <li>javascript&#38;jquery</li>
+                  <li>react&#38;bootstrap</li>
+                  <li>php&#38;mysql</li>
+                </ul>
+                <div class="main_about pro_R_CV">
+                  <p
+                    class="cv_btn f_h5"
+                    onclick="window.open('/teamPJ/team02/detail.html')"
+                  >
+                    상세 보기
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="workBg_img">
               </div>
               <div class="main_txt">
                 <div class="main_pj_tit">
@@ -424,7 +387,7 @@
                 <div class="main_about pro_R_CV">
                   <p
                     class="cv_btn f_h5"
-                    onclick="window.open('./sub/detail.html')"
+                    onclick="window.open('/teamPJ/team01/detail.html')"
                   >
                     상세 보기
                   </p>
