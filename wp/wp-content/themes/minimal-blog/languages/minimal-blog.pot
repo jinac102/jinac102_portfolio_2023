@@ -1,0 +1,607 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Minimal Blog\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-27 11:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/template-tags.php:79
+#, php-format
+msgid " %1$s"
+msgstr ""
+
+#: inc/template-tags.php:108
+msgid "% Comments"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:77 inc/template-tags.php:94 inc/template-tags.php:100
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:108
+msgid "1 Comment"
+msgstr ""
+
+#: inc/widgets/recent-post.php:51
+msgid "All Categories"
+msgstr ""
+
+#: inc/meta-option.php:75
+msgid "Appearance Settings"
+msgstr ""
+
+#: inc/widgets/author.php:73
+msgid "Author Image:"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:21
+msgid "Banner Slider Options"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:68
+msgid "Button Text Front Page Slider"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:53
+msgid "Category For Front Page Slider"
+msgstr ""
+
+#: inc/widgets/widget-base.php:250
+msgid "Choose Image"
+msgstr ""
+
+#: comments.php:47 comments.php:68
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:85
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post title
+#: comments.php:33
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: inc/customizer/customizer-mode.php:56 components/post/content.php:56
+msgid "Continue Reading"
+msgstr ""
+
+#. %s: Name of current post.
+#: components/post/content-single.php:34
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/customizer/customizer-mode.php:59
+msgid "Copyright all rights reserved"
+msgstr ""
+
+#: inc/widgets/author.php:68
+msgid "Description:"
+msgstr ""
+
+#: inc/meta-option.php:116
+msgid "Disable Feature Image"
+msgstr ""
+
+#: inc/widgets/author.php:48
+msgid "Displays authors details in post."
+msgstr ""
+
+#: inc/widgets/recent-post.php:39
+msgid ""
+"Displays post form selected category specific for popular post in sidebars."
+msgstr ""
+
+#: inc/widgets/social.php:45
+msgid "Displays Social share."
+msgstr ""
+
+#: inc/widgets/social.php:308
+msgid "Dribbble"
+msgstr ""
+
+#: inc/widgets/social.php:135
+msgid "Dribbble URL:"
+msgstr ""
+
+#. %s: Name of current post
+#: inc/template-tags.php:115 components/page/content-page.php:43
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/widgets/recent-post.php:54
+msgid "Enable Counter:"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:97
+msgid "Enable Featured Category"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:37
+msgid "Enable Front Page Slider"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:236
+msgid "Enable Related Post on Single post"
+msgstr ""
+
+#: inc/widgets/social.php:180
+msgid "Facebook"
+msgstr ""
+
+#: inc/widgets/author.php:77 inc/widgets/social.php:55
+msgid "Facebook URL:"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:126
+msgid "Featured Category Background Image."
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:81
+msgid "Featured Category Options"
+msgstr ""
+
+#: inc/added-functions.php:18
+msgid "Footer Col-1"
+msgstr ""
+
+#: inc/added-functions.php:27
+msgid "Footer Col-2"
+msgstr ""
+
+#: inc/added-functions.php:36
+msgid "Footer Col-3"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:193
+msgid "Footer Credit Options"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:209
+msgid "Footer Credit Text"
+msgstr ""
+
+#: inc/widgets/social.php:300
+msgid "Foursquare"
+msgstr ""
+
+#: inc/widgets/social.php:130
+msgid "FourSquare URL:"
+msgstr ""
+
+#: inc/meta-option.php:50
+msgid "Full Width"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:162
+#: inc/customizer/customizer-added-options.php:183
+msgid "FullWidth"
+msgstr ""
+
+#: inc/widgets/social.php:292
+msgid "GitHub"
+msgstr ""
+
+#: inc/widgets/social.php:125
+msgid "Github URL:"
+msgstr ""
+
+#: inc/meta-option.php:38
+msgid "Global sidebar"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:141
+msgid "Global Sidebar Options"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://wpinterface.com"
+msgstr ""
+
+#. URI of the theme
+msgid "https://wpinterface.com/themes/minimal-blog/"
+msgstr ""
+
+#: inc/widgets/social.php:204
+msgid "Instagram"
+msgstr ""
+
+#: inc/widgets/author.php:92 inc/widgets/social.php:70
+msgid "Instagram URL:"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: components/post/content-none.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/meta-option.php:17 inc/meta-option.php:25
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/template-tags.php:108
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:160
+#: inc/customizer/customizer-added-options.php:181
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/meta-option.php:46
+msgid "Left sidebar"
+msgstr ""
+
+#: inc/widgets/social.php:196
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/widgets/author.php:87 inc/widgets/social.php:65
+msgid "Linkedin URL:"
+msgstr ""
+
+#. Name of the theme
+msgid "Minimal Blog"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Minimal Blog is a modern, clean, responsive and retina-ready WordPress blog "
+"theme also suitable for magazines, newspapers, or review sites. The theme "
+"comes with several awesome features, including a featured posts slide show, "
+"a magazine homepage template, and a two columned layout"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:10
+msgid "Minimal Blog Options"
+msgstr ""
+
+#: inc/customizer/customizer-upsell.php:83
+msgid "Minimal Blog Pro"
+msgstr ""
+
+#: inc/widgets/author.php:97
+msgid "Minimal Blog: Author Widget"
+msgstr ""
+
+#: inc/widgets/recent-post.php:67
+msgid "Minimal Blog: Recent Widget"
+msgstr ""
+
+#: inc/widgets/social.php:151
+msgid "Minimal Blog: Social Widget"
+msgstr ""
+
+#: 404.php:32
+msgid "Most Used Categories"
+msgstr ""
+
+#: inc/widgets/author.php:63
+msgid "Name:"
+msgstr ""
+
+#: comments.php:51 comments.php:72
+msgid "Newer Comments"
+msgstr ""
+
+#: index.php:54 archive.php:51 search.php:46
+msgid "Newer post:"
+msgstr ""
+
+#: single.php:118
+msgid "Next post:"
+msgstr ""
+
+#: components/post/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/widgets/recent-post.php:59
+msgid "Number of Posts:"
+msgstr ""
+
+#: comments.php:50 comments.php:71
+msgid "Older Comments"
+msgstr ""
+
+#: index.php:53 archive.php:50 search.php:45
+msgid "Older post:"
+msgstr ""
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/added-functions.php:65
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: components/page/content-page.php:33 components/post/content-single.php:39
+msgid "Pages:"
+msgstr ""
+
+#: inc/widgets/social.php:212
+msgid "Pinterest"
+msgstr ""
+
+#: inc/widgets/social.php:75
+msgid "Pinterest URL:"
+msgstr ""
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:28 inc/template-tags.php:60
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:96
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: single.php:117
+msgid "Previous post:"
+msgstr ""
+
+#: components/navigation/navigation-top.php:4
+msgid "Primary Menu"
+msgstr ""
+
+#: components/post/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:127
+#, php-format
+msgid "Recommended Size %1$s X %2$s"
+msgstr ""
+
+#: inc/widgets/social.php:220
+msgid "Reddit"
+msgstr ""
+
+#: inc/widgets/social.php:80
+msgid "Reddit URL:"
+msgstr ""
+
+#: inc/customizer/customizer-mode.php:60
+msgid "Related Post"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:252
+msgid "Related Post Title"
+msgstr ""
+
+#: inc/widgets/widget-base.php:261
+msgctxt "Remove"
+msgid "X"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:161
+#: inc/customizer/customizer-added-options.php:182
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/meta-option.php:42
+msgid "Right sidebar"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/widgets/recent-post.php:49
+msgid "Select Category:"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:113
+msgid "Select Featured Category"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:157
+msgid "Select Global Sidebar Layout"
+msgstr ""
+
+#: inc/widgets/widget-base.php:250
+msgid "Select Image"
+msgstr ""
+
+#: inc/added-functions.php:9
+msgid "Sidebar"
+msgstr ""
+
+#: inc/meta-option.php:89
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:219
+msgid "Single Post Setting"
+msgstr ""
+
+#: inc/customizer/customizer-added-options.php:178
+msgid "Single Post/Page Global Sidebar Layout"
+msgstr ""
+
+#: header.php:80
+msgid "Skip to content"
+msgstr ""
+
+#: inc/widgets/social.php:228
+msgid "Skype"
+msgstr ""
+
+#: inc/widgets/social.php:85
+msgid "Skype URL:"
+msgstr ""
+
+#: inc/widgets/social.php:236
+msgid "Snapchat"
+msgstr ""
+
+#: inc/widgets/social.php:90
+msgid "Snapchat URL:"
+msgstr ""
+
+#: functions.php:51
+msgid "Social Menu"
+msgstr ""
+
+#: components/post/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/template-tags.php:102
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: components/footer/site-info.php:9
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: inc/widgets/social.php:325
+msgid "TikTok"
+msgstr ""
+
+#: inc/widgets/social.php:145
+msgid "TikTok URL:"
+msgstr ""
+
+#: inc/widgets/author.php:54 inc/widgets/recent-post.php:44
+#: inc/widgets/social.php:50
+msgid "Title:"
+msgstr ""
+
+#: functions.php:50
+msgid "Top"
+msgstr ""
+
+#. %1$s: smiley
+#: 404.php:49
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: inc/widgets/social.php:244
+msgid "Tumblr"
+msgstr ""
+
+#: inc/widgets/social.php:95
+msgid "Tumblr URL:"
+msgstr ""
+
+#: inc/widgets/social.php:252
+msgid "Twitch"
+msgstr ""
+
+#: inc/widgets/social.php:100
+msgid "Twitch URL:"
+msgstr ""
+
+#: inc/widgets/social.php:188
+msgid "Twitter"
+msgstr ""
+
+#: inc/widgets/author.php:82 inc/widgets/social.php:60
+msgid "Twitter URL:"
+msgstr ""
+
+#: inc/customizer/customizer-upsell.php:84
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: inc/widgets/widget-base.php:250
+msgid "Upload"
+msgstr ""
+
+#: inc/widgets/social.php:268
+msgid "Vimeo"
+msgstr ""
+
+#: inc/widgets/social.php:110
+msgid "Vimeo URL:"
+msgstr ""
+
+#: inc/widgets/social.php:316
+msgid "VK"
+msgstr ""
+
+#: inc/widgets/social.php:140
+msgid "VK URL:"
+msgstr ""
+
+#: inc/widgets/social.php:276
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/widgets/social.php:115
+msgid "Whatsapp URL:"
+msgstr ""
+
+#: inc/widgets/author.php:59
+msgid "Widget Background Image:"
+msgstr ""
+
+#: inc/widgets/social.php:284
+msgid "WordPress"
+msgstr ""
+
+#: inc/widgets/social.php:120
+msgid "WordPress URL:"
+msgstr ""
+
+#. Author of the theme
+msgid "WPInterface"
+msgstr ""
+
+#: inc/widgets/social.php:260
+msgid "Youtube"
+msgstr ""
+
+#: inc/widgets/social.php:105
+msgid "Youtube URL:"
+msgstr ""

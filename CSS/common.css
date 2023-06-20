@@ -11,19 +11,19 @@ body {
   font-size: 16px;
 }
 .f_h1 {
-  font-size: 2em;
+  font-size: 4.1em;
 }
 .f_h2 {
-  font-size: 1.75em;
+  font-size: 2em;
 }
 .f_h3 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 .f_h4 {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 .f_h5 {
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 .f_B {
@@ -35,7 +35,23 @@ body {
 .f_L {
   font-weight: 200;
 }
-
+@media screen and (max-width: 1200px) {
+  .f_h1 {
+    font-size: 2em;
+  }
+  .f_h2 {
+    font-size: 1.75em;
+  }
+  .f_h3 {
+    font-size: 1.25em;
+  }
+  .f_h4 {
+    font-size: 1em;
+  }
+  .f_h5 {
+    font-size: 0.75em;
+  }
+}
 /* color */
 :root {
   --BG_N: #000b18;
@@ -107,18 +123,33 @@ a {
   display: none;
   overflow: hidden;
 }
+.mb27 {
+  margin-bottom: 27px;
+}
+.mb54 {
+  margin-bottom: 54px;
+}
+.mt54 {
+  margin-top: 54px;
+}
 
+/**/
 .blobs {
   position: absolute;
   width: 356px;
-  height: 337px;
+  /* height: 337px; */
   left: 75px;
   top: 110px;
 }
 .blobs2 {
   position: absolute;
-  width: 210px;
-  height: 160px;
-  left: 82%;
-  top: 25.2em;
+  width: 225px;
+  /* height: 225px; */
+}
+.scroll_p {
+  position: absolute;
+  left: calc(50% - 39%);
+  top: 0;
+  line-height: 27px;
+  text-transform: uppercase;
 }

@@ -1,0 +1,58 @@
+/*
+Theme Name: Minimal Blog
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Languagecomponentsupport
+
+*/
+
+.main-navigation .menu ul li i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.main-navigation .menu .menu-mobile {
+    text-align: right;
+}
+
+.main-navigation .menu .menu-mobile li a {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.main-navigation .menu .menu-mobile li a i{
+    left: 0;
+    right: inherit;
+}
+
+@media only screen and (min-width: 992px) {
+    .site .main-navigation .menu ul ul {
+        text-align: right;
+    }
+
+    .main-navigation .menu ul ul ul {
+        right: 100%;
+        left: inherit;
+    }
+}
+
+.main-slider .slide-content {
+    text-align: right;
+    left: inherit;
+    right: 35px;
+}
+
+.widget.widget_recent_comments li,
+.widget.widget_pages li,
+.widget.social-widget-menu li,
+.widget.widget_archive li,
+.widget.widget_meta li,
+.widget.widget_categories li,
+.widget.widget_nav_menu li,
+.widget.widget_recent_entries li {
+    padding-right: 0;
+    padding-left: 20px;
+}

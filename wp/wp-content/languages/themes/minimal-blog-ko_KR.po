@@ -1,0 +1,275 @@
+# Translation of Themes - Minimal Blog in Korean
+# This file is distributed under the same license as the Themes - Minimal Blog package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-08-16 14:26:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: ko_KR\n"
+"Project-Id-Version: Themes - Minimal Blog\n"
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "Minimal Blog"
+msgstr "Minimal Blog"
+
+#: inc/meta-option.php:17 inc/meta-option.php:25
+msgid "Layout Settings"
+msgstr "레이아웃 설정"
+
+#: inc/customizer/customizer-added-options.php:209
+msgid "Footer Credit Text"
+msgstr "바닥글 제작정보 문자"
+
+#: inc/customizer/customizer-added-options.php:193
+msgid "Footer Credit Options"
+msgstr "바닥글 제작정보 옵션"
+
+#: inc/customizer/customizer-upsell.php:83
+msgid "Minimal Blog Pro"
+msgstr "Minimal Blog Pro"
+
+#: inc/customizer/customizer-upsell.php:84
+msgid "Upgrade To Pro"
+msgstr "Pro 로 업그레이드"
+
+#: components/post/content-none.php:30
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "찾고 있는 것을 찾을 수 없는 것 같습니다. 검색이 도움이 될 수도 있습니다."
+
+#: components/post/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "죄송하지만 검색어와 일치하는 것이 없습니다. 다른 검색어로 다시 시도해보세요."
+
+#: components/post/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "첫 번째 글을 발행할 준비가 됐나요? <a href=\"%1$s\">여기서 시작하세요</a>."
+
+#: components/navigation/navigation-top.php:4
+msgid "Primary Menu"
+msgstr "기본 메뉴"
+
+#: components/page/content-page.php:33 components/post/content-single.php:39
+msgid "Pages:"
+msgstr "페이지:"
+
+#: comments.php:85
+msgid "Comments are closed."
+msgstr "댓글이 닫혀있습니다."
+
+#: comments.php:47 comments.php:68
+msgid "Comment navigation"
+msgstr "댓글 내비게이션"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "이런! 해당 페이지를 찾을 수 없습니다."
+
+#: inc/template-tags.php:79
+msgid " %1$s"
+msgstr " %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:77 inc/template-tags.php:94 inc/template-tags.php:100
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:28 inc/template-tags.php:60
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "작성일자 %s"
+
+#: comments.php:51 comments.php:72
+msgid "Newer Comments"
+msgstr "새 댓글"
+
+#: comments.php:50 comments.php:71
+msgid "Older Comments"
+msgstr "이전 댓글"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; 에 대한 %1$s 댓글"
+
+#. translators: %s: post title
+#: comments.php:33
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo;의 하나의 댓글"
+
+#: inc/template-tags.php:108
+msgid "% Comments"
+msgstr "댓글 %개"
+
+#: inc/template-tags.php:108
+msgid "1 Comment"
+msgstr "댓글 한 개"
+
+#: inc/template-tags.php:108
+msgid "Leave a comment"
+msgstr "댓글 남기기"
+
+#: inc/template-tags.php:102
+msgid "Tagged %1$s"
+msgstr "태그 %1$s"
+
+#: inc/customizer/customizer-added-options.php:162
+#: inc/customizer/customizer-added-options.php:183
+msgid "FullWidth"
+msgstr "전체 폭"
+
+#: inc/customizer/customizer-added-options.php:161
+#: inc/customizer/customizer-added-options.php:182
+msgid "Right Sidebar"
+msgstr "우측 사이드바"
+
+#: inc/customizer/customizer-added-options.php:160
+#: inc/customizer/customizer-added-options.php:181
+msgid "Left Sidebar"
+msgstr "좌측 사이드바"
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "이 위치에서 아무 것도 찾을 수 없을 것 같습니다. 아래의 링크 또는 검색 중 하나를 하세요."
+
+#: inc/added-functions.php:65
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "끄기"
+
+#: inc/added-functions.php:9
+msgid "Sidebar"
+msgstr "사이드바"
+
+#: header.php:80
+msgid "Skip to content"
+msgstr "내용으로 바로가기"
+
+#: functions.php:50
+msgid "Top"
+msgstr "꼭대기"
+
+#: components/post/content.php:56 inc/customizer/customizer-mode.php:56
+msgid "Continue Reading"
+msgstr "계속 읽기"
+
+#. translators: %s: Name of current post.
+#: components/post/content-single.php:34
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%s 더보기 <span class=\"meta-nav\">&rarr;</span>"
+
+#: components/post/content-none.php:14
+msgid "Nothing Found"
+msgstr "찾지 못함"
+
+#: components/footer/site-info.php:9
+msgid "Theme: %1$s by %2$s."
+msgstr "테마: %1$s(%2$s 제작)."
+
+#. translators: %1$s: smiley
+#: 404.php:49
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "월간 보관물을 확인해보세요. %1$s"
+
+#: 404.php:32
+msgid "Most Used Categories"
+msgstr "가장 많이 사용된 카테고리"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "다음에 대한 검색 결과: %s"
+
+#. translators: %s: Name of current post
+#: components/page/content-page.php:43 inc/template-tags.php:115
+msgid "Edit %s"
+msgstr "%s 편집하기"
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s님이 작성"
+
+#: inc/template-tags.php:96
+msgid "Posted in %1$s"
+msgstr "%1$s에 게시되었습니다"
+
+#: inc/added-functions.php:18
+msgid "Footer Col-1"
+msgstr "바닥글 열-1"
+
+#: inc/added-functions.php:27
+msgid "Footer Col-2"
+msgstr "바닥글 열-2"
+
+#: inc/added-functions.php:36
+msgid "Footer Col-3"
+msgstr "바닥글 열-3"
+
+#: inc/customizer/customizer-added-options.php:21
+msgid "Banner Slider Options"
+msgstr "배너 슬라이더 옵션"
+
+#: inc/customizer/customizer-added-options.php:10
+msgid "Minimal Blog Options"
+msgstr "소형 블로그 옵션"
+
+#: inc/customizer/customizer-added-options.php:37
+msgid "Enable Front Page Slider"
+msgstr "표지 페이지 슬라이더 활성화하기"
+
+#: inc/customizer/customizer-added-options.php:53
+msgid "Category For Front Page Slider"
+msgstr "표지 페이지 슬라이더용 카테고리"
+
+#: inc/customizer/customizer-added-options.php:68
+msgid "Button Text Front Page Slider"
+msgstr "표지 페이지 슬라이더용 버튼"
+
+#: inc/customizer/customizer-added-options.php:81
+msgid "Featured Category Options"
+msgstr "대표 카테고리 옵션"
+
+#: inc/customizer/customizer-added-options.php:97
+msgid "Enable Featured Category"
+msgstr "대표 카테고리 옵션"
+
+#: inc/customizer/customizer-added-options.php:113
+msgid "Select Featured Category"
+msgstr "대표 카테고리 선택하기"
+
+#: inc/customizer/customizer-added-options.php:126
+msgid "Featured Category Background Image."
+msgstr "대표 카테고리 배경 이미지입니다."
+
+#: inc/customizer/customizer-added-options.php:127
+msgid "Recommended Size %1$s X %2$s"
+msgstr "권장크기는 %1$s X %2$s입니다"
+
+#: inc/customizer/customizer-added-options.php:141
+msgid "Global Sidebar Options"
+msgstr "전역 슬라이더 옵션"
+
+#: inc/customizer/customizer-added-options.php:157
+msgid "Select Global Sidebar Layout"
+msgstr "전역 슬라이더 레이아웃 선택하기"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://wpinterface.com/themes/minimal-blog/"
+msgstr "https://wpinterface.com/themes/minimal-blog/"
+
+#. Author of the theme
+#, gp-priority: low
+msgid "WPInterface"
+msgstr "WPInterface"
+
+#. Author URI of the theme
+#, gp-priority: low
+msgid "https://wpinterface.com"
+msgstr "https://wpinterface.com"

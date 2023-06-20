@@ -1,0 +1,71 @@
+/* 다크모드 */
+.dark header > svg {
+  fill: var(--SEC_LG);
+}
+.dark .navi > li > a {
+  color: var(--SEC_LG);
+}
+.dark .navi > li a::after {
+  border-bottom: 2px solid var(--SEC_LG);
+}
+.dark .lang .lang_nav {
+  background: var(--SEC_LG);
+}
+.dark .lang_nav.tog_open::before {
+  border-color: transparent transparent var(--SEC_LG) transparent;
+}
+.dark .lang .lang_nav > li a {
+  color: var(--BG_N);
+}
+
+.dark .D_mode {
+  background-position: -1.75em 0.1em;
+}
+.dark .lang {
+  background-position: -5.75em 0em;
+}
+.dark .arrow {
+  background-position: -11.1em 0em;
+}
+
+/* main */
+.dark .mLine,
+.dark .t_ml:after,
+.dark .b_ml::before {
+  background: var(--sec_s);
+}
+.dark .m_tit span {
+  color: var(--sec_s);
+}
+.dark .m_subT,
+.dark .scroll_p {
+  color: var(--FONT_W);
+}
+
+/* work */
+.dark .m_fh1 {
+  color: var(--sec_s);
+}
+.dark #prof h1 {
+  color: var(--Font_B);
+}
+.dark .pro_R_tit > p,
+.dark .pro_R_CV .cv_btn,
+.dark .contact_kao_L > p {
+  color: var(--FONT_W);
+}
+.dark .pro_R_CV .cv_btn {
+  border-top: 1px solid var(--sec_s);
+  border-bottom: 1px solid var(--sec_s);
+}
+.dark .contact_kao_L {
+  border: 0.5px solid var(--FONT_W);
+}
+.dark .swiper-slide > .main_txt {
+  color: var(--FONT_W);
+}
+
+/* footer */
+.dark .copy {
+  color: var(--FONT_W);
+}
