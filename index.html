@@ -97,13 +97,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css"
-      integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="/CSS/common.css" />
     <link rel="stylesheet" href="/CSS/main.css" />
     <link rel="stylesheet" href="/CSS/main_media.css" />
@@ -192,7 +185,7 @@
               <li class="sprite D_mode link" onclick="Dmode()">
                 <span class="none">darkmode</span>
               </li>
-              <li class="sprite lang link">
+              <!-- <li class="sprite lang link">
                 <span class="none">언어변경</span>
                 <ul class="lang_nav link">
                   <li class="link">
@@ -205,7 +198,7 @@
                     <a href="">jp</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -215,7 +208,7 @@
           <li class="sprite D_mode link" onclick="Dmode()">
             <span class="none">darkmode</span>
           </li>
-          <li class="sprite lang link">
+          <!-- <li class="sprite lang link">
             <span class="none">언어변경</span>
             <ul class="lang_nav link">
               <li class="link">
@@ -228,14 +221,14 @@
                 <a href="">jp</a>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div>
     </header>
     <main id="fullpage">
       <!-- 메인 페이지 -->
       <section id="top" class="section active">
-        <h1 class="none">first</h1>
+        <h2 class="none">first</h2>
         <div class="m_top">
           <div class="mLine t_ml"></div>
           <h2 class="m_tit f_B">
@@ -265,7 +258,7 @@
       </section>
       <!-- section2 작업물 -->
       <section id="work" class="section">
-        <h1 class="f_h1 m_fh1 f_R ms_R">work</h1>
+        <h2 class="f_h1 m_fh1 f_R ms_R">work</h2>
         <div class="content contain swiper mySwiper">
           <ul
             class="list d-flex swiper-wrapper"
@@ -411,7 +404,7 @@
       </section>
       <!-- section3 프로필 -->
       <section id="prof" class="section">
-        <h1 class="f_h1 m_fh1 f_R">profile</h1>
+        <h2 class="f_h1 m_fh1 f_R">profile</h2>
         <div class="prof_L conatain">
           <div class="pro_L_tit mt54 f_R">
             <p>
@@ -496,9 +489,9 @@
       </section>
       <!-- section3 연락 -->
       <section id="contact" class="section contain">
-        <h1 class="f_h1 m_fh1 f_R">
+        <h2 class="f_h1 m_fh1 f_R">
           contact
-        </h1>
+        </h2>
         <h4 class="contact_tit f_R f_h4">
           <span>do something that’s</span>
           <span>genuinely intersting to you,</span>
@@ -531,7 +524,7 @@
       </section>
     </main>
     <footer>
-      <h1 class="none">footer</h1>
+      <h2 class="none">footer</h2>
       <div class="copy">© 2023 JINAC. All Rights Reserved.</div>
     </footer>
     
@@ -541,38 +534,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"
-      integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.extensions.min.js"
-      integrity="sha512-i0+IGP2OBJG5Lioj9FaBr30x7Ci39dWQb8BhSd8J86p48OgctpfXXq0hG6cmCbCkKh4tn335pz9b3seChGFdKw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" -->
-    ></script>
-
-    <script src="./JS/main.js"></script>
-    <script>
-      new fullpage("#fullpage", {
-        //options here
-        autoScrolling: true,
-        scrollHorizontally: true,
-      });
-        fullpage();
-
-    $(window).resize(function(){
-        if($(this).width() <= 768){
-        fullpage_api.destroy('all');
-        }else{
-        fullpage();
-        }
-    });
-
-    $(window).trigger('resize');
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   </body>
 </html>
